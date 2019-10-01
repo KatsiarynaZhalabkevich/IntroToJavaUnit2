@@ -2,7 +2,7 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*29. Найти положительные элементы главной диагонали квадратной матрицы.*/
+/*29.РќР°Р№С‚Рё РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё РєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹.*/
 public class Task29 {
 	 public static void main(String[] args) {
 	        Random random = new Random();
@@ -10,11 +10,11 @@ public class Task29 {
 	        int array[][] = new int[n][n];
 
 
-	        System.out.println("n = " + n + "\nМассив:");
+	        System.out.println("n = " + n + "\nРњР°С‚СЂРёС†Р°:");
 	        create(array);
 	        print(array);
 	        
-	        System.out.print("Положительные элементы главной диагонали: ");
+	        System.out.print("РџРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РЅР° РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
 	        positiveOnMainDiag(array);
 
 	    }

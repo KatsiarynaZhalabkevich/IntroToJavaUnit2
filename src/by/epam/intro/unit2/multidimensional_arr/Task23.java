@@ -2,9 +2,9 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*23. Сформировать квадратную матрицу порядка N по правилу:
-a[i][j]=sin((i*i-j*j)/n)
-и подсчитать количество положительных элементов в ней.*/
+/*23. 23. РЎС„РѕСЂРјРёСЂРѕРІР°С‚СЊ РєРІР°РґСЂР°С‚РЅСѓСЋ РјР°С‚СЂРёС†Сѓ РїРѕСЂСЏРґРєР° N РїРѕ РїСЂР°РІРёР»Сѓ:
+Рё РїРѕРґСЃС‡РёС‚Р°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РІ РЅРµР№.
+a[i][j]=sin((i*i-j*j)/n)*/
 
 public class Task23 {
 
@@ -14,11 +14,11 @@ public class Task23 {
 		int n = 2 * (random.nextInt(7) + 1);
 		double array[][] = new double[n][n];
 
-		System.out.println("n = " + n + "\n Массив:");
+		System.out.println("n = " + n + "\nРњР°С‚СЂРёС†Р°:");
 		create(array);
 		print(array);
 
-		System.out.println("Кол-во положительных элементов равно " + countPositive(array));
+		System.out.println("РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ  " + countPositive(array));
 	}
 
 	public static void create(double array[][]) {

@@ -2,7 +2,7 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*9. Дана квадратная матрица. Вывести на экран элементы, стоящие на диагонали.*/
+/*9. Р”Р°РЅР° РєРІР°РґСЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р°. Р’С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ СЌР»РµРјРµРЅС‚С‹, СЃС‚РѕСЏС‰РёРµ РЅР° РґРёР°РіРѕРЅР°Р»Рё..*/
 
 public class Task9 {
 	public static void main(String[] args) {
@@ -11,9 +11,9 @@ public class Task9 {
         
         create(array);
         print(array);
-        System.out.println("На главной диагонали: ");
+        System.out.println("Р­Р»РµРјРµРЅС‚С‹ РіР»Р°РІРЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
         printMainDiag(array);
-        System.out.println("\nНа побочной диагонали: ");
+        System.out.println("\nР­Р»РµРјРµРЅС‚С‹ РїРѕР±РѕС‡РЅРѕР№ РґРёР°РіРѕРЅР°Р»Рё: ");
         printAnotherDiag(array);
         
     }

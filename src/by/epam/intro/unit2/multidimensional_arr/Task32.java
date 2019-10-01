@@ -2,22 +2,22 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*32. Отсортировать строки матрицы по возрастанию и убыванию значений элементов.*/
+/*32.  РћС‚СЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ СЃС‚СЂРѕРєРё РјР°С‚СЂРёС†С‹ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ Рё СѓР±С‹РІР°РЅРёСЋ Р·РЅР°С‡РµРЅРёР№ СЌР»РµРјРµРЅС‚РѕРІ.*/
 public class Task32 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		int n = 2 * (random.nextInt(7) + 1);
 		int array[][] = new int[n][n];
 		
-		System.out.println("n = " + n + "\nМассив:");
+		System.out.println("n = " + n + "\nРњР°С‚СЂРёС†Р°:");
 		create(array);
 		print(array);
 
-		System.out.println("Сортировка строк  по убыванию:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СѓР±С‹РІР°РЅРёСЋ:");
 		sortToByMin(array);
 		print(array);
 
-		System.out.println("Сортировка строк по возрастанию:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ:");
 		sortByMax(array);
 		print(array);
 

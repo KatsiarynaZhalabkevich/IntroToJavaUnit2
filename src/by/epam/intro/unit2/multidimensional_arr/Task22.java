@@ -2,7 +2,8 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*22. Сформировать квадратную матрицу порядка n по заданному образцу(n - четное): диагональная матрица*/
+/*22.13. РЎС„РѕСЂРјРёСЂРѕРІР°С‚СЊ РєРІР°РґСЂР°С‚РЅСѓСЋ РјР°С‚СЂРёС†Сѓ РїРѕСЂСЏРґРєР° n РїРѕ Р·Р°РґР°РЅРЅРѕРјСѓ РѕР±СЂР°Р·С†Сѓ(n - С‡РµС‚РЅРѕРµ):
+*/
 public class Task22 {
 	public static void main(String[] args) {
 
@@ -10,7 +11,7 @@ public class Task22 {
 		int n = 2 * (random.nextInt(7) + 1);
 		int array[][] = new int[n][n];
 
-		System.out.println("n = " + n + "\nМассив:");
+		System.out.println("n = " + n + "\nРњР°С‚СЂРёС†Р°:");
 		create(array);
 		print(array);
 
@@ -36,7 +37,7 @@ public class Task22 {
 		for (int i = 0; i < array.length; i++) {
 
 			for (int j = 0; j < array.length; j++) {
-				System.out.print(array[i][j] + " ");
+				System.out.printf("%5d ", array[i][j]);
 			}
 			System.out.println();
 		}

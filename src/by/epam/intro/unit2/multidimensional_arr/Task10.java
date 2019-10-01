@@ -1,5 +1,7 @@
 package by.epam.intro.unit2.multidimensional_arr;
-/*10. Дана матрица. Вывести k-ю строку и p-й столбец матрицы.*/
+/*10. Р”Р°РЅР° РјР°С‚СЂРёС†Р°. 
+ * Р’С‹РІРµСЃС‚Рё k-СЋ СЃС‚СЂРѕРєСѓ Рё p-Р№ СЃС‚РѕР»Р±РµС† РјР°С‚СЂРёС†С‹.
+*/
 
 import java.util.Random;
 
@@ -13,16 +15,16 @@ public class Task10 {
 		int k = random.nextInt(n);
 		int p = random.nextInt(m);
 		
-		System.out.println("Массив имеет вид:");
+		System.out.println("РњР°С‚СЂРёС†Р° РёРјРµРµС‚ РІРёРґ:");
 		createArr(array);
 		print(array);
-		System.out.println("Вывести " + (k + 1) + "-ю строку и " + (p + 1) + "-й столбец");
+		System.out.println("РџРµС‡Р°С‚СЊ" + (k + 1) + "-СЃС‚СЂРѕРєР°" + (p + 1) + "-СЃС‚РѕР»Р±РµС†");
 		
-		System.out.println("Строка ");
+		System.out.println("РЎС‚СЂРѕРєР° ");
 		printLine(array, k);
 		
 		
-		System.out.println("\nСтолбец ");
+		System.out.println("\nРЎС‚РѕР»Р±РµС†");
 		printRow(array, p);
 		
 	}

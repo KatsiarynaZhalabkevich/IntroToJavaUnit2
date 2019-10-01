@@ -7,9 +7,9 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.Random;
 
-/*27. В числовой матрице поменять местами два столбца любых столбца, т. е. все элементы одного столбца
-поставить на соответствующие им позиции другого, а его элементы второго переместить в первый. Номера
-столбцов вводит пользователь с клавиатуры.*/
+/*27. Р’ С‡РёСЃР»РѕРІРѕР№ РјР°С‚СЂРёС†Рµ РїРѕРјРµРЅСЏС‚СЊ РјРµСЃС‚Р°РјРё РґРІР° СЃС‚РѕР»Р±С†Р° Р»СЋР±С‹С… СЃС‚РѕР»Р±С†Р°, С‚. Рµ. РІСЃРµ СЌР»РµРјРµРЅС‚С‹ РѕРґРЅРѕРіРѕ СЃС‚РѕР»Р±С†Р°
+РїРѕСЃС‚Р°РІРёС‚СЊ РЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ РёРј РїРѕР·РёС†РёРё РґСЂСѓРіРѕРіРѕ, Р° РµРіРѕ СЌР»РµРјРµРЅС‚С‹ РІС‚РѕСЂРѕРіРѕ РїРµСЂРµРјРµСЃС‚РёС‚СЊ РІ РїРµСЂРІС‹Р№. РќРѕРјРµСЂР°
+СЃС‚РѕР»Р±С†РѕРІ РІРІРѕРґРёС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹.*/
 
 public class Task27 {
 	public static void main(String[] args) throws IOException {
@@ -18,11 +18,11 @@ public class Task27 {
 		int n = 2 * (random.nextInt(7) + 1);
 		int array[][] = new int[n][n];
 
-		System.out.println("n = " + n + "\nМатрица:");
+		System.out.println("n = " + n + "\nРњР°С‚СЂРёС†Р°:");
 		create(array);
 		print(array);
 
-		System.out.println("Введите номер столбца 1 <= " + n);
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ СЃС‚РѕР»Р±С†Р° 1 <= " + n);
 		InputStream inputStream = System.in;
 		Reader inputStreamReader = new InputStreamReader(inputStream);
 		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
@@ -30,20 +30,20 @@ public class Task27 {
 		String str = bufferedReader.readLine();
 		int x = Integer.parseInt(str);
 
-		System.out.println("Введите номер столбца 2 <= " + n);
+		System.out.println("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ СЃС‚РѕР»Р±С†Р° 2 <= " + n);
 		str = bufferedReader.readLine();
 		int y = Integer.parseInt(str);
 
 		if (x > n || y > n)
-			System.out.println("Введены неверные значения столбцов! ");
+			System.out.println("Р’РІРµРґРµРЅС‹ РЅРµРІРµСЂРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ СЃС‚РѕР»Р±С†РѕРІ! ");
 		else {
 			if (x != y) {
 				change(array, x, y);
-				System.out.println("Новый массив: ");
+				System.out.println("РљРѕРЅРµС‡РЅР°СЏ РјР°С‚СЂРёС†Р°: ");
 				print(array);
 
 			} else
-				System.out.println("Столбцы совпадают! Ничего менять не нужно!");
+				System.out.println("РќРѕРјРµСЂР° СЃС‚РѕР»Р±С†РѕРІ СЂР°РІРЅС‹! РќРёС‡РµРіРѕ РјРµРЅСЏС‚СЊ РЅРµ РЅСѓР¶РЅРѕ!");
 		}
 	}
 
@@ -63,7 +63,7 @@ public class Task27 {
 		for (int i = 0; i < array.length; i++) {
 
 			for (int j = 0; j < array.length; j++) {
-				System.out.print(array[i][j] + " ");
+				System.out.printf("%5d ", array[i][j]);
 			}
 			System.out.println();
 		}

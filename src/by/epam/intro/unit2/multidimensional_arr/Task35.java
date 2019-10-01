@@ -2,24 +2,24 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*35. Найдите наибольший элемент матрицы и заменить все нечетные элементы на него.*/
+/*35. РќР°Р№РґРёС‚Рµ РЅР°РёР±РѕР»СЊС€РёР№ СЌР»РµРјРµРЅС‚ РјР°С‚СЂРёС†С‹ Рё Р·Р°РјРµРЅРёС‚СЊ РІСЃРµ РЅРµС‡РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ РЅР° РЅРµРіРѕ.*/
 public class Task35 {
 	public static void main(String[] args) {
 
 		Random random = new Random();
 		int n, m;
-		int max = 0;
+		
 		n = random.nextInt(10);
 		m = random.nextInt(10);
 		int[][] array = new int[n][m];
 
-		System.out.println("Строк " + n + " столбцов " + m);
-		System.out.println("Исходная матрица имеет вид:");
+		System.out.println("РЎС‚СЂРѕРє " + n + " СЃС‚РѕР»Р±С†РѕРІ " + m);
+		System.out.println("РСЃС…РѕРґРЅР°СЏ РјР°С‚СЂРёС†Р° РёРјРµРµС‚ РІРёРґ:");
 		create(array);
 		print(array);
 
-		System.out.println("Максимальное значение в матрице равно " + maxvalue(array));
-		System.out.println("Конечная матрица имеет вид:");
+		System.out.println("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°С‚СЂРёС†Рµ СЂР°РІРЅРѕ " + maxvalue(array));
+		System.out.println("РљРѕРЅРµС‡РЅР°СЏ РјР°С‚СЂРёС†Р° РёРјРµРµС‚ РІРёРґ:");
 		change(array, maxvalue(array));
 		print(array);
 	}

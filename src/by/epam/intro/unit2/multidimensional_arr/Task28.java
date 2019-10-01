@@ -2,8 +2,8 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*28. Задана матрица неотрицательных чисел. Посчитать сумму элементов в каждом столбце. Определить,
-какой столбец содержит максимальную сумму.*/
+/*28. Р—Р°РґР°РЅР° РјР°С‚СЂРёС†Р° РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹С… С‡РёСЃРµР». РџРѕСЃС‡РёС‚Р°С‚СЊ СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РІ РєР°Р¶РґРѕРј СЃС‚РѕР»Р±С†Рµ. РћРїСЂРµРґРµР»РёС‚СЊ,
+РєР°РєРѕР№ СЃС‚РѕР»Р±РµС† СЃРѕРґРµСЂР¶РёС‚ РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃСѓРјРјСѓ.*/
 public class Task28 {
 	public static void main(String[] args) {
 
@@ -12,18 +12,18 @@ public class Task28 {
 		int array[][] = new int[n][n];
 		int sum[];
 
-		System.out.println("n = " + n + "\nМассив:");
+		System.out.println("n = " + n + "\nРњРђС‚СЂРёС†Р°:");
 		create(array);
 		print(array);
 
 		sum = countSum(array);
 
-		System.out.println("Сумма по столбцам:");
+		System.out.println("РЎСѓРјРјС‹ СЃС‚РѕР»Р±С†РѕРІ:");
 		for (int a : sum) {
 			System.out.print(a + " ");
 
 		}
-		System.out.println("/nМаксимальная сумма " + countMaxSum(sum) + " в " + (findMaxRow(sum) + 1) + " столбце!");
+		System.out.println("/nРњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃСѓРјРјР° СЂР°РІРЅР° " + countMaxSum(sum) + " РІ " + (findMaxRow(sum) + 1) + " СЃС‚РѕР»Р±С†Рµ!");
 	}
 
 	public static void create(int array[][]) {
@@ -42,7 +42,7 @@ public class Task28 {
 		for (int i = 0; i < array.length; i++) {
 
 			for (int j = 0; j < array.length; j++) {
-				System.out.print(array[i][j] + " ");
+				System.out.printf("%5d ", array[i][j]);
 			}
 			System.out.println();
 		}
@@ -63,7 +63,7 @@ public class Task28 {
 
 	public static int countMaxSum(int sum[]) {
 
-		int sumMax = 0; // для обмена
+		int sumMax = 0; 
 		for (int i = 0; i < sum.length; i++) {
 			if (sum[i] > sumMax) {
 				sumMax = sum[i];
@@ -75,7 +75,7 @@ public class Task28 {
 
 	public static int findMaxRow(int sum[]) {
 
-		int sumMax = 0, max = 0; // для обмена
+		int sumMax = 0, max = 0; 
 		for (int i = 0; i < sum.length; i++) {
 			if (sum[i] > sumMax) {
 				sumMax = sum[i];

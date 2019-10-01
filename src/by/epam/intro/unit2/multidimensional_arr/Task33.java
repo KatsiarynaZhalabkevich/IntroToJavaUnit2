@@ -2,22 +2,22 @@ package by.epam.intro.unit2.multidimensional_arr;
 
 import java.util.Random;
 
-/*отсортировать столбцы по убыванию/возрастанию*/
+/*33. РћС‚СЃРѕС‚СЂРёСЂРѕРІР°С‚СЊ СЃС‚РѕР±С†С‹ РјР°С‚СЂРёС†С‹ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ Рё СѓР±С‹РІР°РЅРёСЋ Р·РЅР°С‡РµРЅРёР№ СЌРµРјРµРЅС‚РѕРІ.*/
 public class Task33 {
 	public static void main(String[] args) {
 		Random random = new Random();
 		int n = 2 * (random.nextInt(7) + 1);
 		int array[][] = new int[n][n];
 
-		System.out.println("n = " + n + "\nМассив:");
+		System.out.println("n = " + n + "\nРњР°С‚СЂРёС†Р°:");
 		create(array);
 		print(array);
 
-		System.out.println("Сортировка столбцов по убыванию:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° СЃС‚РѕР»Р±С†РѕРІ РїРѕ СѓР±С‹РІР°РЅРёСЋ:");
 		sortByMin(array);
 		print(array);
 
-		System.out.println("Сортировка столбцов по возрастанию:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° СЃС‚РѕР»Р±С†РѕРІ РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ:");
 		sortByMax(array);
 		print(array);
 	}
